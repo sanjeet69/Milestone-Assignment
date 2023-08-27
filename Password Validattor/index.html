@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function matchPassword(){
+        let pw1 = document.getElementById("pswd1");
+        let pw2 = document.getElementById("pswd2");
+        if(pw1!= pw2)
+        {
+            alert("Password did not match");
+        } else{
+            alert("Password created successfully");
+        }
+    }
+</script>
+<body>
+    <center>
+        <form >
+           <h1 style="color:green">Javapoint</h1>
+           <h3>Confirm password Validation Example</h3>
+           <!-- Password -->
+           <td>Enter Password</td>
+            <input type="password" name="pswd1"><br> <br>
+
+            <!-- Confirm Password -->
+            <input type="password" name="pswd2"> <br> <br>
+
+            <!-- validate confirm password -->
+            <button type="submit" onclick="matchPassword()">Sumbit</button>
+
+            <!-- reset fields -->
+
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+    </center>
+</body>
+</html>
